@@ -1,0 +1,55 @@
+{
+	"manifest_version": 2,
+	"name": "z.eer.io",
+	"version": "0.1",
+	"description": "Post to App.net using z.eer.io, and enhance alpha.app.net with z.eer.io embedded media",
+	"icons": {
+		"16": "favicon-16x16.png",
+		"48": "favicon-48x48.png",
+		"128": "favicon-128x128.png"
+	},
+	"browser_action": {
+		"default_icon": {
+			"19": "favicon-19x19.png",
+			"38": "favicon-38x38.png"
+		},
+
+		// popup provides authentication and the ability to share any web page via z.eer.io
+		"default_popup": "popup.html"
+	},
+	"homepage_url": "https://z.eer.io/",
+
+	"externally_connectable": {
+		"matches": ["https://z.eer.io/*"]
+	},
+
+	"content_scripts": [
+
+		// we want to enhance alpha.app.net to allow z.eer.io embedded content when posting
+		{
+			"matches": ["https://alpha.app.net/*"],
+			"css": ["alpha.css"],
+			"js": ["jquery-2.1.4.min.js","appnet.5.js","zeerio.js","enhance.js","alpha.js"]
+		}
+
+	],
+	"permissions": [
+
+		// so we can see the current tab to share it
+		"activeTab",
+
+		// so we can store the user's authentication info
+		"storage",
+
+		// so we can authenticate with z.eer.io via the app.net API
+		"https://account.app.net/",
+		"https://alpha-api.app.net/",
+
+		// so we can communicate with the z.eer.io API
+		"https://z.eer.io/",
+
+		"https://*/",
+		"http://*/"
+
+	]
+}

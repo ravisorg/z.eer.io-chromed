@@ -1,0 +1,28 @@
+.nav.header .logo {
+	margin-top: 8px !important;
+}
+.nav.header #zeerio-logo {
+	position: absolute;
+	top: 21px;
+	font-size: 12px;
+	font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-align: right;
+	width: 118px;
+}
+
+html.breakpoint-phone .nav.header #zeerio-logo {
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAAq1BMVEX/xA3/xAz/xhf/4YL/5ZX/5ZT/333/xhT/yB//88z/3XP/55v/6qr/xQ//ySH/6qn/yif/6qv/3XT/wwn/ySL/22v/yyn/8sv/0UL/wwr/xhP/yBz/1E7/8cb/4YP/6KL/xRL/7bP/3G7/wwj/xAv/yyv/zzz/yB3/xhb/1lX/8MP/2mf/yyj/44r/5pn/xhX/77z/9NP/yib/xxn/443/447/4H//xxr////ScI4vAAAAAWJLR0Q4oAel1gAAAAlwSFlzAAALEwAACxMBAJqcGAAAAHNJREFUGNNjYMAOGIEAmcvEzMLKxo4kwMHJxc3DiyTAxy8gKCSMJCAiKiYuIYlkiJS0jCwHsqkMwnLyqNYqKCopI/NVVDnV1DWQ9Ahraklr66ggBCR19aT5xRACjPoGrFyGRkgCxmwmpmbmyPaqAAEOfwMAH4YHzRG/VDIAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTQtMDUtMjlUMDQ6MzE6NTUrMDI6MDAXXVGNAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE0LTA1LTI5VDA0OjMxOjU1KzAyOjAwZgDpMQAAAABJRU5ErkJggg==');
+	overflow: hidden;
+	color: transparent;
+	left: 61px;
+	top: 28px;
+	width: 14px;
+	height: 14px;
+	background-size: contain;
+	border-radius: 7px;
+}
+
+textarea.zeerio-input {
+	border: 2px solid rgb(255, 195, 12) !important;
+	background-color: rgba(255, 195, 12, 0.1);
+}

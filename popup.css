@@ -1,0 +1,12 @@
+body {
+	margin: 0;
+	padding: 12px 0;
+}
+
+#shareframe {
+	width: 780px;
+	height: 600px;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
