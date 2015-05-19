@@ -8,7 +8,7 @@
 		"48": "favicon-48x48.png",
 		"128": "favicon-128x128.png"
 	},
-	"key":"ggkoapkaljkhaanabchojgjcdpobomkm",
+	"key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjWca7/l9/Tyduyc1oqv8B+Jt5h9mlpYtg2OtyE/P4ODQ6pJqVMBBD8inUgqUEk7yZxjBN2Pugy5guTW+CXU14so9X1D9T7ojVGDbB5H4bJBSdENXMoEVHWNC8hJJOf526Xv86I81gzoCU5yeL4K0FtmDYor9vrWR9rWEX+GZZuzPG1KGlewT8KKdlexDC5hwK/qpQGd5ThwFS1tscPCw8E81QSIe4l75vFKqDmmklck5B2xNywk36vTDffFYrd35qEi2Ng6Uu8Q/xYb+Tr8yb0o8kS5DSPE+GKmXyik3xKm/OSVVmnFHBS/TkeUGDrUzyc59NOk3SejXEmhAxM/EfwIDAQAB",
 	"browser_action": {
 		"default_icon": {
 			"19": "favicon-19x19.png",
@@ -35,9 +35,7 @@
 		"storage",
 		"https://account.app.net/",
 		"https://alpha-api.app.net/",
-		"https://z.eer.io/",
-		"https://*/",
-		"http://*/"
+		"https://z.eer.io/"
 	]
 
 }
