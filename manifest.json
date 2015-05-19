@@ -1,0 +1,43 @@
+{
+	"manifest_version": 2,
+	"name": "z.eer.io",
+	"version": "0.2",
+	"description": "Post to App.net using z.eer.io, and enhance alpha.app.net with z.eer.io embedded media",
+	"icons": {
+		"16": "favicon-16x16.png",
+		"48": "favicon-48x48.png",
+		"128": "favicon-128x128.png"
+	},
+	"key":"ggkoapkaljkhaanabchojgjcdpobomkm",
+	"browser_action": {
+		"default_icon": {
+			"19": "favicon-19x19.png",
+			"38": "favicon-38x38.png"
+		},
+		"default_popup": "popup.html"
+	},
+	"homepage_url": "https://z.eer.io/",
+
+	"externally_connectable": {
+		"matches": ["https://z.eer.io/*"]
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["https://alpha.app.net/*"],
+			"css": ["alpha.css"],
+			"js": ["jquery-2.1.4.min.js","appnet.5.js","zeerio.js","enhance.js","alpha.js"]
+		}
+	],
+
+	"permissions": [
+		"activeTab",
+		"storage",
+		"https://account.app.net/",
+		"https://alpha-api.app.net/",
+		"https://z.eer.io/",
+		"https://*/",
+		"http://*/"
+	]
+
+}
