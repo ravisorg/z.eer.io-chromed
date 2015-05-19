@@ -195,30 +195,6 @@ function deauthenticate(callback) {
 
 }
 
-chrome.runtime.onMessageExternal.addListener(function(request, sender, sendResponse) {
-	console.log('incoming message');
-	console.log('request',request);
-	console.log('sender',sender);
-	console.log('sendResponse',sendResponse);
-	if (!sender.url.match(/^https:\/\/z.eer.io\//)) {
-		console.log('denied!');
-		return;  // don't allow this web page access
-	}
-	if (request.logout) {
-		console.log('requested logout');
-		var data = {'user':null,'last_verified':null,'user_token':null};
-		zSet(data,function(success) {
-			loadPopupUrl('auth.html');
-			return;
-		});
-	}
-});
-
-
-
-
-
-
 function shareCurrentPage() {
 	console.log('getting window url and title and selected text...');
 	chrome.tabs.executeScript( null, {
